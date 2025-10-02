@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="ParaBank Automation Suite" verbose="1" parallel="false">
+
+   
+   <!-- Attach Listeners -->
+    <listeners>
+        <listener class-name="utils.TestListener"/>
+        <listener class-name="utils.RetryListener"/>
+    </listeners>
+    <!-- Login Tests -->
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- Registration Tests -->
+    <test name="Registration Tests">
+        <classes>
+            <class name="tests.RegisterTest"/>
+        </classes>
+    </test>
+
+    <!-- Accounts Overview Tests -->
+    <test name="Accounts Overview Tests">
+        <classes>
+            <class name="tests.AccountsTest"/>
+        </classes>
+    </test>
+
+    <!-- Funds Transfer Tests -->
+    <test name="Funds Transfer Tests">
+        <classes>
+            <class name="tests.TransferFundsTest"/>
+        </classes>
+    </test>
+
+    <!-- Bill Pay Tests -->
+    <test name="Bill Pay Tests">
+        <classes>
+            <class name="tests.BillPayTest"/>
+        </classes>
+    </test>
+
+    <!-- Open New Account Tests -->
+    <test name="Open New Account Tests">
+        <classes>
+            <class name="tests.OpenNewAccountTest"/>
+        </classes>
+    </test>
+
+</suite>
